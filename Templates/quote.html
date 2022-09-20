@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<!-- Form to get a quote -->
+
+    <form action="/quote" method="post">
+        <h3>Look up stock information by symbol</h3>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="i.e AAPL" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Look up!</button>
+    </form>
+{% endblock %}
